@@ -1,6 +1,6 @@
 body {
-    background-image: url ("https://www.myfreetextures.com/wp-content/uploads/2011/06/dragonskinblue.jpg");
-    background-size: cover;
+    /* background-image: url ("https://www.myfreetextures.com/wp-content/uploads/2011/06/dragonskinblue.jpg");
+    background-size: cover; */
     background-color: #cccccc;
 }
 .stageContainer{
@@ -24,14 +24,22 @@ body {
     justify-content: space-around;
     
 }
+.characterButton{
+    margin-left: 37%;
+    height: 5vh;
+    border-radius: 19px;
+    background-color: rgb(30, 155, 19);
+    color: white;
+    cursor: pointer;
+}
 
 .playerOne{
-    border: solid green;
+    /* border: solid green; */
     width: 22%;
 }
 
 .playerTwo{
-    border: solid purple;
+    /* border: solid purple; */
     width: 22%;
 }
 .dice{
@@ -40,13 +48,13 @@ body {
 }
 /* choosing characters......... */
 .chooseCharacter{
-    border: solid orange;
+    /* border: solid orange; */
     height: 42vh;
     display: flex;
     justify-content: space-between;
 }
 .select{
-    border: solid ;
+    /* border: solid ; */
     width: 12%;
 }
 .azula{
