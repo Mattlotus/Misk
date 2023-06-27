@@ -5,6 +5,7 @@ let azula = {
     fireWheel : 20 , 
     lightning  : 50 , 
     sozinComet: 85,
+    image:"https://static.tvtropes.org/pmwiki/pub/images/azula_full.png"
 };
 
 let zuko = {
@@ -12,7 +13,8 @@ let zuko = {
     health: 200 , 
     fireBall : 20 ,
     fireWave :40,
-    dragonBreathe : 70
+    dragonBreathe : 70,
+    image:"https://img.favpng.com/9/9/13/zuko-katara-azula-aang-desktop-wallpaper-png-favpng-h4rdnXizDXjjUnsN6r3WgzF8B_t.jpg"
 };
 
 let pikachu = {
@@ -21,6 +23,9 @@ let pikachu = {
     bolt:25,
     tailWhip:15,
     thundershock : 60,
+    image:"https://www.freeiconspng.com/thumbs/pikachu-transparent/pikachu-transparent-hd-1.png"
+
+
 }
 
 let squirtle = {
@@ -29,6 +34,7 @@ let squirtle = {
     waterGun: 25,
     rollOut: 10,
     hydroPump: 70,
+    image:"https://assets.stickpng.com/images/580b57fcd9996e24bc43c32a.png"
 
 }
 
@@ -38,6 +44,7 @@ let johnWick = {
     pistolWhip: 15,
     pencil : 40,
     headshot: 70,  
+    image:"https://w7.pngwing.com/pngs/900/728/png-transparent-keanu-reeves-john-wick-film-director-punisher-others-microphone-film-formal-wear-thumbnail.png"
 }
 let coachCarter = {
     name: "Coach Carter",
@@ -46,13 +53,54 @@ let coachCarter = {
     benched: 30,
     pointFinger : 45,
     mofo: 80, 
+    image:"https://c8.alamy.com/comp/2JHKTJ8/samuel-l-jackson-coach-carter-2005-2JHKTJ8.jpg"
 }
+let question ;
+let playerContainerOne= document.querySelector("#playerOnePic")
+let playerContainerTwo= document.querySelector("#playerTwoPic")
+
+
+//  LET PLAYER ONE CHOOSE ONE CHARACTER .
+function playerOneChoose(character,) {
+    console.log(question)
+   if ( question == "1"){
+    console.log(playerContainerOne)
+    playerContainerOne.setAttribute("src",character.image)
+    question = false
+   }else {
+    console.log("player 2 choose")
+    console.log(character)
+    playerContainerTwo.setAttribute("src",character.image)
+   }
+}
+
+function askQuestion(){
+
+   return question = prompt( "player 1 or player 2")
+    console.log(question)
+}
+
+
+// LET PLAYER TWO CHOOSE ONE CHARACTER .
 
 
 
 //  LET PLAYER ONE CHOOSE ONE CHARACTER .
+function playerTwoChoose(character) {
+   
+    // alert ("player 2 pick a character")
+    // let question =  prompt("player 1 or player 2")
+   if ( question === "1"){
+    playerOneChoose(character)
+    
+   }else {
+    playerTwoChoose(character)
+   }
+  playerContainerTwo.setAttribute("src",character.image)
+}
+// playerTwoChoose()
 
-// LET PLAYER TWO CHOOSE ONE CHARACTER .
+
 // PLAYER 1 GOES FIRST. ROLL DICE TO DETERMINE ATTACK
 // IF PLAYER ROLLS A NUMBER THAT IS NOT ON THEIR CARD.ATTACK MISS!!
 // If player 2 survives player 2 rolls next
