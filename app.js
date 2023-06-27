@@ -2,7 +2,7 @@
 let azula = {
     name: "Azula",
     health: 150 ,
-    fireBreathe : 10 , 
+    fireWheel : 20 , 
     lightning  : 50 , 
     sozinComet: 85,
 };
@@ -10,14 +10,14 @@ let azula = {
 let zuko = {
     name : "Zuko",
     health: 200 , 
-    fireBall : 40 ,
-    teaSpill : -20,
-    dragonBreathe : 60
+    fireBall : 20 ,
+    fireWave :40,
+    dragonBreathe : 70
 };
 
 let pikachu = {
     name: "Pikachu",
-    health : 100,
+    health : 130,
     bolt:25,
     tailWhip:15,
     thundershock : 60,
@@ -51,6 +51,7 @@ let coachCarter = {
 
 
 //  LET PLAYER ONE CHOOSE ONE CHARACTER .
+
 // LET PLAYER TWO CHOOSE ONE CHARACTER .
 // PLAYER 1 GOES FIRST. ROLL DICE TO DETERMINE ATTACK
 // IF PLAYER ROLLS A NUMBER THAT IS NOT ON THEIR CARD.ATTACK MISS!!
