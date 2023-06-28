@@ -55,19 +55,26 @@ let coachCarter = {
     mofo: 80, 
     image:"https://c8.alamy.com/comp/2JHKTJ8/samuel-l-jackson-coach-carter-2005-2JHKTJ8.jpg"
 }
+
+// add choose character functions
 let question ;
 let playerContainerOne= document.querySelector("#playerOnePic")
 let playerContainerTwo= document.querySelector("#playerTwoPic")
+let player1
+let player2 
 
-
-//  LET PLAYER ONE CHOOSE ONE CHARACTER .
+//  LET PLAYERS CHOOSE ONE CHARACTER .
 function playerOneChoose(character,) {
     console.log(question)
    if ( question == "1"){
+    player1=character
+    console.log("player1 is", player1)
     console.log(playerContainerOne)
     playerContainerOne.setAttribute("src",character.image)
     question = false
    }else {
+    player2 = character
+    console.log("player 2 is", player2)
     console.log("player 2 choose")
     console.log(character)
     playerContainerTwo.setAttribute("src",character.image)
@@ -80,28 +87,43 @@ function askQuestion(){
     console.log(question)
 }
 
-
-// LET PLAYER TWO CHOOSE ONE CHARACTER .
-
-
-
-//  LET PLAYER ONE CHOOSE ONE CHARACTER .
-function playerTwoChoose(character) {
-   
-    // alert ("player 2 pick a character")
-    // let question =  prompt("player 1 or player 2")
-   if ( question === "1"){
-    playerOneChoose(character)
-    
-   }else {
-    playerTwoChoose(character)
-   }
-  playerContainerTwo.setAttribute("src",character.image)
-}
-// playerTwoChoose()
-
-
 // PLAYER 1 GOES FIRST. ROLL DICE TO DETERMINE ATTACK
+let dice 
+
+function generateRandomNum (min , max){
+    min = Math.ceil(min);
+    max = Math.floor (max);
+    return Math.floor (Math.random() * (max-min + 1)+ min);
+}
+
+const diceNumber  = () =>{
+  dice = generateRandomNum(1 , 6)
+  console.log(dice)
+
+}
+
+function attack(){
+    console.log("attack")
+    if(attack = 1){
+        console.log("MISS")
+
+    }else{ attack === 2 || 4 || 6
+        console.log("HIT")
+    }
+
+}
+
+ 
+
+
+
+//  switch (dice) {
+//     case 
+//  }
+
+
+
+
 // IF PLAYER ROLLS A NUMBER THAT IS NOT ON THEIR CARD.ATTACK MISS!!
 // If player 2 survives player 2 rolls next
 // KEEP ROLLING TILL SOMEBOBDY DIES.
