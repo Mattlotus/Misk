@@ -58,10 +58,13 @@ let coachCarter = {
 
 
 let question ;
+let question2;
 let playerContainerOne= document.querySelector("#playerOnePic")
 let playerContainerTwo= document.querySelector("#playerTwoPic")
 let player1 = {}
 let player2 = {}
+let p1Turn
+let p2Turn
 let player1Turn = true
 let player2Turn = true
 let currentMove ={}
@@ -82,14 +85,20 @@ function playerOneChoose(character,) {
     playerContainerTwo.setAttribute("src",character.image)
    }
 }
-//  Are you player 1 or 2 ?..........
+//  Are you player 1 or 2 ?...GIVE Turns..........
 function askQuestion(){
 
    return question = prompt( "player 1 or player 2")
     console.log(question)
 }
+function playerOneTurn(){
+    return p1Turn = prompt ("player 1 turn , Roll Dice!")
+}
+function playerTwoTurn(){
+    return p2Turn = prompt ("player 2 Turn, ROLL DICE!")
+}
 
-// ROLL DICE TO DETERMINE ATTACK
+// ROLL DICE TO DETERMINE ATTACK.....................
 
 
 function generateRandomNum (min , max){
@@ -101,7 +110,7 @@ function generateRandomNum (min , max){
 const diceNumber  = () =>{
   dice = generateRandomNum(1 , 6)
   console.log(dice)
-  if (dice <= 3){
+  if (dice >= 4){
     console.log("hit")
     
 }else{
