@@ -67,6 +67,7 @@ let player2Turn = true
 let currentMove ={}
 let dice
 
+
 //  LET PLAYERS CHOOSE ONE CHARACTER........ .
 function playerOneChoose(character,) {
     console.log(question)
@@ -100,12 +101,32 @@ function generateRandomNum (min , max){
 const diceNumber  = () =>{
   dice = generateRandomNum(1 , 6)
   console.log(dice)
+  if (dice <= 3){
+    console.log("hit")
+    
+}else{
+    console.log("miss")
+}
+ 
+}
 //  ATTACK PHASE.........
+const attackOne = () => {
+    // if (player1.dice = 2){
+    //     console.log("hit")
+    //     player2.health - 20
+    // }else{
+    //     console.log("miss")
+    // }
+
+    }
+
+        
+    
+
   
   switch(dice){
     case 1:
-        player1.character
-
+        
         console.log(dice)
         break;
    case 2:
@@ -123,8 +144,8 @@ const diceNumber  = () =>{
     case 6:
         console.log(dice)
         break;
-  }
-}
+   }
+  
 
 // function attack(){
 //     console.log("attack")
