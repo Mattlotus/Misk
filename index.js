@@ -1,18 +1,12 @@
-// dice roll theory
+// roll dice
+// player 1 turn 
+// player 1 does damage depending on number rolled
+// If hit , subtract character attack power from challengers health
 
-let dice 
+// player 2 turn
+// player does damage depending on number rolled
+// If hit, subtract character attack power from challengers health
 
-function generateRandomNum (min , max){
-    min = Math.ceil(min);
-    max = Math.floor (max);
-    return Math.floor (Math.random() * (max-min)+ min)
-};
-
-const diceNumber  = () =>{
-  dice = generateRandomNum()
-  console.log(dice)
-
-}
 
 
 

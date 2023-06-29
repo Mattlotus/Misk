@@ -56,53 +56,40 @@ let coachCarter = {
     image:"https://c8.alamy.com/comp/2JHKTJ8/samuel-l-jackson-coach-carter-2005-2JHKTJ8.jpg"
 }
 
-// add choose character functions
+
 let question ;
 let playerContainerOne= document.querySelector("#playerOnePic")
 let playerContainerTwo= document.querySelector("#playerTwoPic")
-let player1 = {
-    isTurn:true,
-    character:{},
-    attack(){
-        console.log("player 1 attacking")
-    }
+let player1 = {}
+let player2 = {}
+let player1Turn = true
+let player2Turn = true
+let currentMove ={}
+let dice
 
-
-}
-let player2 = {
-    isTurn: true,
-    character:{},
-    attack(){
-        console.log("player 2 attacking")
-    }
-}
-
-//  LET PLAYERS CHOOSE ONE CHARACTER .
+//  LET PLAYERS CHOOSE ONE CHARACTER........ .
 function playerOneChoose(character,) {
     console.log(question)
    if ( question == "1"){
-    player1.character = character
-    console.log("player1 is", player1)
-    console.log(playerContainerOne)
+    player1 = character
+    console.log(player1)
     playerContainerOne.setAttribute("src",character.image)
     question = false
    }else {
     player2 = character
-    console.log("player 2 is", player2)
-    console.log("player 2 choose")
-    console.log(character)
+    console.log(player2)
     playerContainerTwo.setAttribute("src",character.image)
    }
 }
-
+//  Are you player 1 or 2 ?..........
 function askQuestion(){
 
    return question = prompt( "player 1 or player 2")
     console.log(question)
 }
 
-// PLAYER 1 GOES FIRST. ROLL DICE TO DETERMINE ATTACK
-let dice 
+// ROLL DICE TO DETERMINE ATTACK
+
 
 function generateRandomNum (min , max){
     min = Math.ceil(min);
@@ -113,27 +100,53 @@ function generateRandomNum (min , max){
 const diceNumber  = () =>{
   dice = generateRandomNum(1 , 6)
   console.log(dice)
-  attack()
-}
-
-function attack(){
-    console.log("attack")
-    if(attack = 1){
-        console.log("MISS")
-
-
-    }else if (attack === 2 || 4 || 6){ 
-        console.log("HIT")
-    }
-
-}
-//  switch (dice) 
-switch(diceNumber().getResult()) {
+//  ATTACK PHASE.........
+  
+  switch(dice){
     case 1:
-        result = "MISS"
-     case 2:
-        result =    
+        player1.character
+
+        console.log(dice)
+        break;
+   case 2:
+        console.log(dice)
+        break;
+   case 3:
+        console.log(dice)
+        break;
+   case 4:
+        console.log(dice)
+        break;
+     case 5:
+        console.log(dice)
+        break;
+    case 6:
+        console.log(dice)
+        break;
+  }
 }
+
+// function attack(){
+//     console.log("attack")
+//     if(attack = 1){
+//         console.log("MISS")
+
+
+//     }else if (attack === 2 || 4 || 6){ 
+//         console.log("HIT")
+//     }
+
+// }
+//  switch (dice) 
+// switch(diceNumber().getResult()) {
+//     case 1:
+//         result = "MISS";
+//      case 2:
+//         result = azula.fireWheel - 
+//          break; 
+//     case 3: 
+//     result =   
+// }
 
 
 
