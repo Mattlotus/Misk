@@ -111,18 +111,33 @@ const diceNumber  = () =>{
   console.log(dice)
   if (dice === 4){
     console.log("hit")
-    player1
+    attackFour()
 }else if (dice === 5){
     console.log("hit")
-} else if (dice ===6) {
+    attackFive()
+} else if (dice === 6) {
     console.log("hit")
+    attackSix()
 }
 }
-//  ATTACK PHASE.........
-const attackOne = () => {
-    let 
+//  ATTACK PHASE............
+const attackFour = () =>{
+    let damage4 = -20
+    let shot =(player2.health = damage4)
+    player2.health = shot
+    };
 
-    }
+const attackFive = () =>{
+    let damage5 = -30
+    let shot =(player2.health = damage5)
+    player2.health = shot
+}
+
+const attackSix = () => {
+    let damage6 = -50
+    let shot =(player2.health = damage6)
+    player2.health = shot
+}
     // DETERMINE LIFE OF PLAYERS
 
     const determineLifeOfPlayer1 = () => {
