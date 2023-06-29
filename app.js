@@ -58,7 +58,6 @@ let coachCarter = {
 
 
 let question ;
-let question2;
 let playerContainerOne= document.querySelector("#playerOnePic")
 let playerContainerTwo= document.querySelector("#playerTwoPic")
 let player1 = {}
@@ -110,26 +109,39 @@ function generateRandomNum (min , max){
 const diceNumber  = () =>{
   dice = generateRandomNum(1 , 6)
   console.log(dice)
-  if (dice >= 4){
+  if (dice === 4){
     console.log("hit")
-    
-}else{
-    console.log("miss")
+    player1
+}else if (dice === 5){
+    console.log("hit")
+} else if (dice ===6) {
+    console.log("hit")
 }
- 
 }
 //  ATTACK PHASE.........
 const attackOne = () => {
-    // if (player1.dice = 2){
-    //     console.log("hit")
-    //     player2.health - 20
-    // }else{
-    //     console.log("miss")
-    // }
+    let 
 
     }
+    // DETERMINE LIFE OF PLAYERS
 
-        
+    const determineLifeOfPlayer1 = () => {
+        if(player1.health <= 0) {
+            alert("PLAYER 2 WINS THE GAME!!")
+
+        }else {
+
+        }
+    }  
+    
+    const determineLifeOfPlayer2 = () => {
+        if (player2.health <= 0){
+            alert("PLAYER 1 WINS THE GAME!!")
+        }else{
+
+        }
+
+    }
     
 
   
