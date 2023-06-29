@@ -60,14 +60,28 @@ let coachCarter = {
 let question ;
 let playerContainerOne= document.querySelector("#playerOnePic")
 let playerContainerTwo= document.querySelector("#playerTwoPic")
-let player1
-let player2 
+let player1 = {
+    isTurn:true,
+    character:{},
+    attack(){
+        console.log("player 1 attacking")
+    }
+
+
+}
+let player2 = {
+    isTurn: true,
+    character:{},
+    attack(){
+        console.log("player 2 attacking")
+    }
+}
 
 //  LET PLAYERS CHOOSE ONE CHARACTER .
 function playerOneChoose(character,) {
     console.log(question)
    if ( question == "1"){
-    player1=character
+    player1.character = character
     console.log("player1 is", player1)
     console.log(playerContainerOne)
     playerContainerOne.setAttribute("src",character.image)
@@ -99,7 +113,7 @@ function generateRandomNum (min , max){
 const diceNumber  = () =>{
   dice = generateRandomNum(1 , 6)
   console.log(dice)
-
+  attack()
 }
 
 function attack(){
@@ -107,19 +121,19 @@ function attack(){
     if(attack = 1){
         console.log("MISS")
 
-    }else{ attack === 2 || 4 || 6
+
+    }else if (attack === 2 || 4 || 6){ 
         console.log("HIT")
     }
 
 }
-
- 
-
-
-
-//  switch (dice) {
-//     case 
-//  }
+//  switch (dice) 
+switch(diceNumber().getResult()) {
+    case 1:
+        result = "MISS"
+     case 2:
+        result =    
+}
 
 
 
