@@ -1,7 +1,7 @@
 body {
     /* background-image: url ("https://www.myfreetextures.com/wp-content/uploads/2011/06/dragonskinblue.jpg");
     background-size: cover; */
-    background-color: #cccccc;
+    background-color: #efefe6;
 }
 .stageContainer{
     /* border: solid red; */
@@ -13,13 +13,15 @@ body {
     /* border: solid blue; */
     height: 5vh;
     text-align: center;
-    background-color: rgb(46, 82, 215);
+    background-color: rgb(11, 52, 174);
     color: white;
     font-size: x-large;  
 }
 /* ...main stage............. */
 .mainStage{
     /* border: solid blue; */
+    background-image: url("https://pbs.twimg.com/media/EdKQYHmWAAAvnH5?format=jpg&name=large");
+    background-size: cover;
     height: 40vh;
     display: flex;
     justify-content: space-around;
@@ -29,22 +31,22 @@ body {
     margin-left: 37%;
     height: 5vh;
     border-radius: 19px;
-    background-color: rgb(30, 155, 19);
+    background-color: rgb(50, 40, 222);
     color: white;
     cursor: pointer;
 }
 
 .playerOne{
-    border: solid green;
+    /* border: solid green; */
     width: 22%;
 }
 
 .playerTwo{
-    border: solid purple;
+    /* border: solid purple; */
     width: 22%;
 }
 .dice{
-    border: solid ;
+    /* border: solid ; */
     width: 22%;
 }
 .dice2{

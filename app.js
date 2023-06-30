@@ -65,9 +65,10 @@ let player2 = {}
 let p1Turn
 let p2Turn
 let player1Turn = true
-let player2Turn = true
 let currentMove ={}
 let dice
+let damage
+
 
 
 //  LET PLAYERS CHOOSE ONE CHARACTER........ .
@@ -111,7 +112,7 @@ const diceNumber  = () =>{
   console.log(dice)
   if (dice === 4){
     console.log("hit")
-    attackFour()
+     attackFour()
 }else if (dice === 5){
     console.log("hit")
     attackFive()
@@ -124,21 +125,50 @@ const diceNumber  = () =>{
 
 //  ATTACK PHASE............
 const attackFour = () =>{
-    let damage4 = -20
-    let shot =(player2.health = damage4)
-    player2.health = shot
+    if(player1Turn == true){
+        player2.health = player2.health -20
+    console.log( "player 2 health =" + player2.health)
+    player1Turn = false
+determineLifeOfPlayer2()
+    }else {
+    player1.health = player1.health -20
+    console.log("player 1 health" + player1.health)
+    player1Turn = true
+    determineLifeOfPlayer1()
+}
+
+
     };
 
 const attackFive = () =>{
-    let damage5 = -30
-    let shot =(player2.health = damage5)
-    player2.health = shot
+    if(player1Turn == true){
+        player2.health = player2.health -30
+    console.log( "player 2 health =" + player2.health)
+    player1Turn = false
+determineLifeOfPlayer2()
+    }else {
+    player1.health = player1.health -30
+    console.log("player 1 health" + player1.health)
+    player1Turn = true
+    determineLifeOfPlayer1()
+    }
+    
+    
 }
 
 const attackSix = () => {
-    let damage6 = -50
-    let shot =(player2.health = damage6)
-    player2.health = shot
+    if(player1Turn == true){
+        player2.health = player2.health -50
+    console.log( "player 2 health =" + player2.health)
+    player1Turn = false
+    determineLifeOfPlayer2()
+
+    }else {
+    player1.health = player1.health -50
+    console.log("player 1 health" + player1.health)
+    player1Turn = true
+    determineLifeOfPlayer1()
+    }
 }
     // DETERMINE LIFE OF PLAYERS
 
