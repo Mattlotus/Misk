@@ -118,8 +118,10 @@ const diceNumber  = () =>{
 } else if (dice === 6) {
     console.log("hit")
     attackSix()
+} else if (dice <= 3)
+    console.log("miss")
 }
-}
+
 //  ATTACK PHASE............
 const attackFour = () =>{
     let damage4 = -20
@@ -160,27 +162,27 @@ const attackSix = () => {
     
 
   
-  switch(dice){
-    case 1:
+//   switch(dice){
+//     case 1:
         
-        console.log(dice)
-        break;
-   case 2:
-        console.log(dice)
-        break;
-   case 3:
-        console.log(dice)
-        break;
-   case 4:
-        console.log(dice)
-        break;
-     case 5:
-        console.log(dice)
-        break;
-    case 6:
-        console.log(dice)
-        break;
-   }
+//         console.log(dice)
+//         break;
+//    case 2:
+//         console.log(dice)
+//         break;
+//    case 3:
+//         console.log(dice)
+//         break;
+//    case 4:
+//         console.log(dice)
+//         break;
+//      case 5:
+//         console.log(dice)
+//         break;
+//     case 6:
+//         console.log(dice)
+//         break;
+//    }
   
 
 // function attack(){
