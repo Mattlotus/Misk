@@ -47,10 +47,10 @@ body {
 }
 .dice{
     /* border: solid ; */
-    width: 22%;
+    width: 15%;
 }
 .dice2{
-    width: 100%;
+    width: 70%;
     
 }
 /* choosing characters......... */
@@ -67,10 +67,10 @@ body {
     width: 12%;
 }
 .azula{
-    width: 100%;
+    width: 90%;
 }
 .zuko{
-    width: 92%;
+    width: 90%;
 }
 .pikachu {
     width: 100%;
@@ -87,13 +87,18 @@ body {
 }
 
 #playerOnePic{
-    width: 100%;
+    width: 50%;
 }
 #playerTwoPic{
-    width: 100%;
+    width: 50%;
 }
 p {
     color: white;
 }
-
+.playerOne {
+    color: white;
+}
+.playerTwo{
+    color: white;
+}
 

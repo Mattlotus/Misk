@@ -1,10 +1,10 @@
 // CREATE ALL 6 CHARACTERS from different universes.
 let azula = {
     name: "Azula",
-    health: 150 ,
+    health: 250 ,
     fireWheel : 20 , 
-    lightning  : 50 , 
-    sozinComet: 85,
+    lightning  : 30 , 
+    sozinComet: 50,
     image:"https://static.tvtropes.org/pmwiki/pub/images/azula_full.png"
 };
 
@@ -12,17 +12,17 @@ let zuko = {
     name : "Zuko",
     health: 200 , 
     fireBall : 20 ,
-    fireWave :40,
-    dragonBreathe : 70,
+    fireWave :30,
+    dragonBreathe : 50,
     image:"https://img.favpng.com/9/9/13/zuko-katara-azula-aang-desktop-wallpaper-png-favpng-h4rdnXizDXjjUnsN6r3WgzF8B_t.jpg"
 };
 
 let pikachu = {
     name: "Pikachu",
     health : 130,
-    bolt:25,
-    tailWhip:15,
-    thundershock : 60,
+    bolt:20,
+    tailWhip:30,
+    thundershock : 50,
     image:"https://www.freeiconspng.com/thumbs/pikachu-transparent/pikachu-transparent-hd-1.png"
 
 
@@ -31,9 +31,9 @@ let pikachu = {
 let squirtle = {
     name: "Squirtle",
     health: 150,
-    waterGun: 25,
-    rollOut: 10,
-    hydroPump: 70,
+    waterGun: 20,
+    rollOut: 30,
+    hydroPump: 50,
     image:"https://assets.stickpng.com/images/580b57fcd9996e24bc43c32a.png"
 
 }
@@ -41,18 +41,18 @@ let squirtle = {
 let johnWick = {
     name: "John Wick",
     health: 200,
-    pistolWhip: 15,
-    pencil : 40,
-    headshot: 70,  
+    pistolWhip: 20,
+    pencil : 30,
+    headshot: 50,  
     image:"https://w7.pngwing.com/pngs/900/728/png-transparent-keanu-reeves-john-wick-film-director-punisher-others-microphone-film-formal-wear-thumbnail.png"
 }
 let coachCarter = {
     name: "Coach Carter",
-    health: 300,
+    health: 200,
     motivationalSpeech: +25,
     benched: 30,
     pointFinger : 45,
-    mofo: 80, 
+    mofo: 50, 
     image:"https://c8.alamy.com/comp/2JHKTJ8/samuel-l-jackson-coach-carter-2005-2JHKTJ8.jpg"
 }
 
@@ -189,58 +189,3 @@ const attackSix = () => {
         }
 
     }
-    
-
-  
-//   switch(dice){
-//     case 1:
-        
-//         console.log(dice)
-//         break;
-//    case 2:
-//         console.log(dice)
-//         break;
-//    case 3:
-//         console.log(dice)
-//         break;
-//    case 4:
-//         console.log(dice)
-//         break;
-//      case 5:
-//         console.log(dice)
-//         break;
-//     case 6:
-//         console.log(dice)
-//         break;
-//    }
-  
-
-// function attack(){
-//     console.log("attack")
-//     if(attack = 1){
-//         console.log("MISS")
-
-
-//     }else if (attack === 2 || 4 || 6){ 
-//         console.log("HIT")
-//     }
-
-// }
-//  switch (dice) 
-// switch(diceNumber().getResult()) {
-//     case 1:
-//         result = "MISS";
-//      case 2:
-//         result = azula.fireWheel - 
-//          break; 
-//     case 3: 
-//     result =   
-// }
-
-
-
-
-// IF PLAYER ROLLS A NUMBER THAT IS NOT ON THEIR CARD.ATTACK MISS!!
-// If player 2 survives player 2 rolls next
-// KEEP ROLLING TILL SOMEBOBDY DIES.
-// LAST MAN STANDING WINS GAME
