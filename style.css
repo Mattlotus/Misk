@@ -58,7 +58,7 @@ body {
     /* border: solid BLUE; */
     background-image: url("https://preview.redd.it/legacy-of-the-bretons-character-select-screen-background-4k-v0-ogo2rpns6dn81.png?width=640&crop=smart&auto=webp&s=75a99a2c2a6c3ff4950badd3817b8b33fd50ee31");
     background-size: cover;
-    height: 42vh;
+    height: 52vh;
     display: flex;
     justify-content: space-between;
 }
@@ -100,5 +100,11 @@ p {
 }
 .playerTwo{
     color: white;
+}
+.choose{
+    border-radius: 19px;
+    background-color: rgb(50, 40, 222);
+    color: white;
+    cursor: pointer;
 }
 
