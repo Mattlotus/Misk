@@ -1,4 +1,4 @@
-# Misk Miltiverse Battle!!
+# Misk Multiverse Battle!!
 Welcome to Misk Multiverse Battle!!
 Select player1 or player 2 to begin.
 Each player can choose one character
